@@ -1,0 +1,87 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url("./img/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.clock {
+    background-image:url("./img/clock.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:370px;
+    height:370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#center {
+    background-color: #000000;
+    width: 4px;
+    height:4px;
+    position: absolute;
+    border:3px solid springgreen;
+    border-radius: 50%;
+    z-index:9999;
+}
+
+#sec {
+    position: absolute;
+    height:45%;
+    margin-top:45px;
+    border:2px solid springgreen;
+    border-radius: 25px;
+    z-index:8888;
+}
+
+#min {
+    position: absolute;
+    height:40%;
+    margin-top:36px;
+    border:2px solid #FFFFFF;
+    border-radius: 25px;
+    z-index:7777;
+}
+
+#hor {
+    position: absolute;
+    height:35%;
+    margin-top:27px;
+    border:2px solid #FFFFFF;
+    border-radius: 25px;
+    z-index:6666;
+}
+
+.s_box, .m_box, .h_box {
+    position: absolute;
+    width:370px;
+    height: 370px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#date {
+    position: absolute;
+    top: 50vh;
+    transform: translateY(-50%);
+    left: 22vw;
+    font-size:50px;
+    font-weight:bold;
+    font-family: NanumBarunGothicOTF;
+    color: #FFFFFF;
+}
+
+#time {
+    position: absolute;
+    top:70%;
+    z-index: 5555;
+}
